@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head and Tails</title>
+</head>
+<body>
+    <script>
+        function coinFlip(){
+
+            const flip = Math.random();
+            let guess = 'Heads';
+            if(flip > 0.5){
+               result = 'Heads';
+            } else{
+                result = 'Tails';
+            }
+            console.log(result);
+            if(guess === result){
+                console.log('You win');
+            } else {
+                console.log('You loose');
+            }
+        }
+
+        coinFlip();
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">
+        Show Quantity
+    </button>
+    <button onclick="add()">
+        Add to cart
+    </button>
+    <button onclick="addTwo()">
+        +2
+    </button>
+    <button onclick="addThree()">
+        +3
+    </button>
+    <button onclick="minusTwo()">
+        -2
+    </button>
+    <button onclick="minusThree()">
+        -3
+    </button>
+    <button onclick="reset()">
+        Reset Tab
+    </button>
+    <script>
+        let cartquantity = 0;     
+
+        function show(){
+            console.log(`Cart Quantity: ${cartquantity}`);
+        }
+
+        function add(){
+        
+            if (cartquantity == 10 ){
+                alert('The cart is full');
+            } else {
+                cartquantity += 1;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+        }
+
+        function addTwo(){
+            if (cartquantity == 10 ){
+                alert('The cart is full');
+            } else {
+                cartquantity += 2;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+        }
+        function addThree(){
+            if (cartquantity == 10 ){
+                alert('The cart is full');
+            } else {
+                cartquantity += 3;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+        }
+        function minusTwo(){
+            if (cartquantity <= 0){
+                alert('Not enough items in the cart');
+            } else {
+                cartquantity -= 2;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+        }
+        function minusThree(){
+            if (cartquantity <= 0){
+                alert('Not enough items in the cart');
+            } else {
+                cartquantity -= 3;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+        }
+        function reset(){
+            cartquantity = 0;
+            console.log('The cart was reset');
+            console.log(`Cart Quantity: ${cartquantity}`);
+        }
+    </script>
+</body>
+</html>
