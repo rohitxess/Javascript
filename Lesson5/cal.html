@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .cal-container{
+            border: solid;
+            width: 120px;
+            padding: 20px 20px ;
+            background-color: rgb(222, 218, 218);
+        }
+        .cal-container p{
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal-container">
+        <h2 style=" margin-top: 2px;
+        margin-bottom: 2px;">Calculator</h2>
+        <p>
+            <button onclick="
+            calculation +=1;
+            console.log(calculation)
+            ">
+            1
+        </button>
+        <button onclick="
+             calculation +=2;
+             console.log(calculation)">
+            2
+        </button>
+        <button onclick="
+        calculation +=3;
+        console.log(calculation)">
+            3
+        </button>
+    
+        </p>
+        
+        <p>
+            <button onclick="
+            calculation +=4;
+            console.log(calculation)
+            ">
+            4
+        </button>
+        <button onclick="
+             calculation +=5;
+             console.log(calculation)">
+            5
+        </button>
+        <button onclick="
+        calculation +=6;
+        console.log(calculation)">
+            6
+        </button>
+        </p>
+    
+        <p>
+            <button onclick="
+            calculation +=7;
+            console.log(calculation)
+            ">
+            7
+        </button>
+        <button onclick="
+             calculation +=8;
+             console.log(calculation)">
+            8
+        </button>
+        <button onclick="
+        calculation +=9;
+        console.log(calculation)">
+            9
+        </button> 
+        </p>
+        <p>
+         <button onclick="
+        calculation +='+'">
+            +
+        </button>
+        <button onclick="
+        calculation -=' - '">
+            -
+        </button>
+        <button onclick="
+       calculation=eval(calculation)
+       console.log(calculation)">
+            =
+        </button>
+        </p>
+    </div>
+  
+    <script>
+        let calculation ='';
+    </script>
+    
+</body>
+</html>
