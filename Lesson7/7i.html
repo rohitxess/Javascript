@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertLength(length, from, to){
+            let conversion =0;
+            if (from == 'miles' || from == 'km' || to == 'miles' || to == 'km'){
+                if (from == 'miles' && to == 'km'){
+                conversion = length * 1.6;    
+            } else if (from == 'km' && to == 'miles'){
+                conversion = length / 1.6;
+            } else if (from == 'km' && to == 'km'){
+               console.log(length);
+            } else if (from == 'miles' && to == 'miles'){
+                console.log(length);
+            }
+
+            console.log(conversion + `${to}`);
+            } else {
+                console.log('Invalid unit');
+            }
+            
+        }
+
+        convertLength(50,'lbs','miles')
+    </script>
+    
+</body>
+</html>
