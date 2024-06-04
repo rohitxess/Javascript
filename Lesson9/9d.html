@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9d</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" onclick="getName" class="jsInput">
+    <button onclick="displayName()">Submit</button>
+    <p class="js-nameDisplay"></p>
+
+    <script>
+        function displayName(){
+            const namePicker = document.querySelector('.jsInput');
+            let getName = namePicker.value;
+
+            document.querySelector('.js-nameDisplay').innerHTML = `Your name is: ${getName}`;
+        }
+    </script>
+</body>
+</html>

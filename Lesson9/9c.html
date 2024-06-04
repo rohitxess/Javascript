@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9c</title>
+</head>
+<body>
+    <button onclick="clicked('Heads')">Heads</button>
+    <button onclick="clicked('Tails')">Tails</button>
+    <p class="display"> </p>
+
+    <script>
+        function clicked(events){
+
+            const side =  document.querySelector('.display');
+            if (events === 'Heads'){
+                side.innerHTML = `You Choose: ${events}`;
+            } else {
+                side.innerHTML = `You Choose: ${events}`;
+            }
+        }
+    </script>
+</body>
+</html>

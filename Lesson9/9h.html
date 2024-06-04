@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9H</title>
+</head>
+<body>
+    <input type="text" 
+    class="inputText"
+    onkeyup="pressText()">
+    <p class="pText"></p>
+    <script>
+        function pressText(){
+            const x = document.querySelector('.inputText');
+            document.querySelector('.pText').innerHTML = x.value;
+        }
+    </script>
+</body>
+</html>
