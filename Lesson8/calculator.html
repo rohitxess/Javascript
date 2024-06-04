@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .cal-container{
+            border: solid;
+            width: 120px;
+            padding: 20px 20px ;
+            background-color: rgb(222, 218, 218);
+        }
+        .cal-container p{
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal-container">
+        <h2 style=" margin-top: 2px;
+        margin-bottom: 2px;">Calculator</h2>
+    
+        <p>
+            <button onclick="update(' 1 ');">
+            1
+            </button>
+            <button onclick="update(' 2 ');">
+                2
+            </button>
+            <button onclick="update(' 3 ');">
+                3
+            </button>
+            <button onclick="update(' + ')">
+                +
+            </button>
+    
+        <p>
+            <button onclick="update(' 4 ')">
+                 4
+            </button>
+            <button onclick="update(' 5 ')">
+                5
+            </button>
+            <button onclick="update(' 6 ')">
+                6
+            </button>
+            <button onclick="update(' - ')">
+                -
+            </button>
+        </p>
+    
+        <p>
+            <button onclick="update(' 7 ')">
+                  7
+            </button>
+            <button onclick="update(' 8 ')">
+                8
+            </button>
+            <button onclick="update(' 9 ')">
+                9
+            </button> 
+            <button onclick="update(' * ')">
+                *
+            </button> 
+        </p>
+        
+        <p>
+            <button oonclick="update(' 0 ')">
+                0
+            </button>
+            <button onclick="update(' . ')">
+                .
+            </button>
+            <button onclick="calculate()">
+                =
+            </button>
+            <button onclick="update(' / ')">
+                /   
+            </button>
+        </p>
+
+        <p>
+            <button onclick="
+                localStorage.setItem('preCalculation', calculation)"
+            >Clear</button>
+        </p>
+    </div>
+  
+    <script>
+        // adding local storage here
+        
+        let calculation = localStorage.getItem('precalculation');
+        
+        function calculate(){
+            
+            calculation=eval(calculation);
+            console.log(calculation);
+
+            localStorage.setItem('preCalculation',calculation);
+        }
+
+        function update(value){
+            calculation += value;
+            console.log(calculation);
+            localStorage.setItem('preCalculation', calculation);
+        }
+    </script>
+    
+</body>
+</html>
