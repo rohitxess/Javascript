@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10d-e-f</title>
+    <style>
+         .gaming-Button, .music-Button, .tech-Button{
+            background-color: rgb(223, 217, 217);
+            color: black;
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .is-toggled{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="gaming-Button" onclick="gameButton(); oneButton()">Gaming</button>
+    <button class="music-Button" onclick="musicButton(); oneButton()">Music</button>
+    <button class="tech-Button" onclick="techButton(); oneButton()">Tech</button>
+    <script>
+        function gameButton(){
+
+            const x = document.querySelector('.gaming-Button');
+            x.classList.contains('is-toggled') ? x.classList.remove('is-toggled') : x.classList.add('is-toggled');
+        
+        }
+        function musicButton(){
+
+            const x = document.querySelector('.music-Button');
+            x.classList.contains('is-toggled') ? x.classList.remove('is-toggled') : x.classList.add('is-toggled');
+            
+        }
+
+        function techButton(){
+
+            const x = document.querySelector('.tech-Button');
+            x.classList.contains('is-toggled') ? x.classList.remove('is-toggled') : x.classList.add('is-toggled');
+            // console.log('true') :console.log('false');
+        }
+
+        function oneButton(){
+            const x1 = document.querySelector('.gaming-Button');
+            const x2 = document.querySelector('.music-Button');
+            const x3 = document.querySelector('.tech-Button');
+
+            if (x1.classList.contains('is-toggled')){
+                x2.classList.remove('is-toggled');
+                x3.classList.remove('is-toggled');
+            } else if (x2.classList.contains('is-toggled')){
+                x1.classList.remove('is-toggled');
+                x3.classList.remove('is-toggled');
+            } else if (x3.classList.contains('is-toggled')){
+                x1.classList.remove('is-toggled');
+                x2.classList.remove('is-toggled');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10abc</title>
+    <style>
+        .addtocart{
+            height: 40px;
+            width: 120px;
+            background-color: rgb(255, 216, 20);
+            border: none;
+            border-radius: 20px;
+        }
+        .request-button{
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 4px;
+        }
+        .later-button{
+            background-color: rgb(223, 217, 217);
+            color: black;
+            font-weight: bold;
+            height: 40px;
+            width: 180px;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <button class="addtocart">Add to Cart</button><br><br>
+    <button class="request-button">Request Now</button>
+    <button class="later-button">Schedule for Later</button><br><br>
+    <button class="js-button">Test</button>
+
+    <script>
+        function classCheck(){
+            const x = document.querySelector('.js-button');
+            x.classList.contains('js-button') ? console.log('true') : console.log('false');
+        }
+
+        classCheck();
+    </script>
+</body>
+</html>

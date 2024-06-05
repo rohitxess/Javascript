@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cost-input{
+            font-size: 15px;
+            padding: 10px;
+        }
+        .calButton{
+            font-size: 15px;
+            padding: 12px 15px;
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        .calButton{
+            cursor: pointer;
+        }
+        .red-error{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Amazon Shipping Calculator</h1>
+    <p>Cart Under $40 - $10 Shipping charge</p>
+    <p>Cart Over $40 - Free Shipping</p>
+    <input type="text" placeholder="Cost of Order" class="cost-input js-input">
+    <button class="calButton" onclick="calculateTotal()">Calculate</button>
+    <p class="js-display"></p>
+    <script>
+       function calculateTotal(){
+           const inputElement = document.querySelector('.js-input');
+           let cost = Number(inputElement.value);
+           console.log(cost);
+           if (cost < 40){
+                cost +=10;
+           }
+            checkCost(); 
+        }
+
+        function checkCost(){
+            const inputElement = document.querySelector('.js-input');
+            let cost = Number(inputElement.value);
+
+            if (cost > 0){
+                document.querySelector('.js-display')
+            .innerHTML = `Total Cost: $${cost}`;
+            } else {
+                costError(cost);
+            }
+        function costError(cost){
+            const x = document.querySelector('.js-display');
+
+            cost < 0 ? x.classList.add('red-error') : x.classList.remove('red-error');
+
+            document.querySelector('.js-display')
+            .innerHTML = 'Error: Cost cannot be less than $0';
+        }
+        }
+    </script>
+</body>
+</html>
