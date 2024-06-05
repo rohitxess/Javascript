@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const array = [1,1,2];
+        const array1 = [1,1,3];
+
+        function addNum(array, array1){
+
+            const newarray = [];
+            let y = 0;
+            let y1 = 0;
+
+            for (let i= 0; i<array1.length; i++){
+                y = array1[i];
+                array.push(y);
+            }
+            console.log(array);
+            y = 0;
+
+            for (i = 0; i<array.length - 3; i++){
+                y = array[i] + array[i+3];
+                newarray.push(y);
+            }
+
+            console.log(newarray);
+        }
+
+        addNum(array,array1);
+
+    </script>
+</body>
+</html>
