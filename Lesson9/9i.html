@@ -18,15 +18,22 @@
     <button onclick="addThree()">
         +3
     </button>
+    <button onclick="addFour()">
+        +4
+    </button>
+    <button onclick="addFive()">
+        +5
+    </button>
+    <button onclick="reset()">
+        Remove from Cart
+    </button>
     <button onclick="minusTwo()">
         -2
     </button>
     <button onclick="minusThree()">
         -3
     </button>
-    <button onclick="reset()">
-        Reset Tab
-    </button>
+    
     <p class="showResult"></p>
     <script>
         let cartquantity = 0;   
@@ -63,6 +70,26 @@
                 alert('The cart is full');
             } else {
                 cartquantity += 3;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+            const addResult = cartquantity;
+            document.querySelector('.showResult').innerHTML = `Cart: ${addResult}`;
+        }
+        function addFour(){
+            if (cartquantity == 10 ){
+                alert('The cart is full');
+            } else {
+                cartquantity += 4;
+                console.log(`Cart Quantity: ${cartquantity}`);
+            }
+            const addResult = cartquantity;
+            document.querySelector('.showResult').innerHTML = `Cart: ${addResult}`;
+        }
+        function addFive(){
+            if (cartquantity == 10 ){
+                alert('The cart is full');
+            } else {
+                cartquantity += 5;
                 console.log(`Cart Quantity: ${cartquantity}`);
             }
             const addResult = cartquantity;
