@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11o</title>
+</head>
+<body>
+    <script>
+        function findIndex(key){
+            const array = ['hello', 'world','search','good'];
+            let i = 0;
+            let n = array.length;
+
+            for (i = 0; i<n; i++){
+                if (key === array[i]){
+                 console.log(i);   
+                } else{
+                    console.log('The key is not present in the array')
+                }
+            }
+        }
+
+        //findIndex('good');
+
+        function finddoubleIndex(key){
+            const array = ['hello', 'world','search','good', 'search'];
+            let i = 0;
+            let x = 0;
+            let n = array.length;
+            let flag = false;
+
+            for (i = 0; i<n; i++){
+                if (key === array[i]){
+                    flag = true;
+                    if (flag === true){
+                        x++;
+                    }   
+                } 
+            }
+            console.log(`Total number of occurence: ${x}`);  
+        }
+        
+
+      //  finddoubleIndex('search')
+
+
+      function firstOccurence(key){
+            const array = ['green','red','blue','red'];
+            let i = 0;
+            let n = array.length;
+
+            for (i = 0; i<n; i++){
+                if (key === array[i]){
+                 console.log(i); 
+                 break;  
+                } else{
+                    console.log('-1')
+                }
+            }
+        }
+
+      //  firstOccurence('james');
+
+      function continueLoop(key){
+            const array = ['egg','apple','egg','egg','ham'];
+            let i = 0;
+            let n = array.length;
+            let newarray = [];
+
+            for (i = 0; i<n; i++){
+                if (array[i] === key){
+                 continue;  
+                } else{
+                    newarray.push(array[i]);
+                }
+            }
+        console.log(newarray);
+        }
+
+        continueLoop('egg')
+    </script>
+</body>
+</html>
