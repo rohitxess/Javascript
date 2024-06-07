@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="jsMessages">Exercise</title>
+</head>
+<body>
+    <button onclick="finishButton()" class="finish-button">Finish</button><br><br>
+    <button onclick="jsCart()" class="add-cart">Add to Cart</button>
+    <p class="display-para"></p>
+    <script>
+        const add = function value (){
+            console.log(2+3);
+        }
+
+        add();
+        add();
+        
+        // 12b 
+        
+        function runTwice(fun){
+            fun();
+            fun();
+        }
+        runTwice(
+            function (){
+                console.log('12b');
+            }
+        )
+        
+        //12c
+        function finishButton(){
+            const jsButton = document.querySelector('.finish-button');
+            jsButton.innerHTML = 'Finished';
+        }
+
+     //   setTimeout(finishButton, 1000);
+
+        // 12d
+
+        function finishButton(){
+            const jsButton = document.querySelector('.finish-button');
+            jsButton.innerHTML = 'Loading.....';
+
+            setTimeout(function(){
+                jsButton.innerHTML = 'Finished!';
+            },
+             1000);
+        }
+
+        //setTimeout(finishButton, 1000);
+       
+        //12e   
+        function jsCart(){
+            const message = document.querySelector('.add-cart');
+            
+            setTimeout(function (){
+                document.querySelector('.display-para').innerHTML = 'Added';
+            }, 1500);
+           
+            clearTimeout();
+
+            setTimeout(function (){
+                document.querySelector('.display-para').innerHTML = '';
+            }, 2000);
+        }
+        //12g
+        function jsMessages(){
+           setInterval(function (){
+            document.title === 'Exercise' ? document.title = '(2) New Messages' : document.title = 'Exercise';
+            },1000);
+        }
+
+        jsMessages();
+
+    </script>
+</body>
+</html>

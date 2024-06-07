@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 40px;
+}
+.rockImg, .paperImg, .scissorImg{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    padding: 20px;
+    border-color: white;
+    background-color: rgb(25, 25, 25);
+    border-radius: 70px;
+}
+.resultImg{
+    height: 60px;
+    width: 60px;
+    border: solid;
+    padding: 20px;
+    border-color: white;
+    background-color: rgb(25, 25, 25);
+    border-radius: 70px;
+}
+button{
+    background-color:  transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.resetButton, .autoplay-design{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.autoplay-design{
+    width: 100px;
+}
+.js-result{
+    font-size: 20px;
+}
+.scoreStyle{
+    margin-top: 20px;
+}
