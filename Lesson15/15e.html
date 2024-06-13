@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shopping</title>
+    <style>
+        .image{
+            height: 400px;
+            width: 400px;
+        }
+        .image-relative{
+            position: relative;
+            display: inline-block;
+            left: 400px;
+            top: 400px;
+        }
+        .image:hover{
+            opacity: 0.6;
+        }
+        .deal-absolute{
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            width: 80px;
+            height: 20px;
+            padding: 10px;
+        }
+        .button-position{
+            position: absolute;
+            left: 160px ;
+            bottom: 80px;
+            background-color: rgb(237, 230, 230);
+        }
+        .button-style{
+            border: solid;
+            border-width: 1px;
+            width: 100px;
+            height: 30px;
+            
+        }
+        .button-style:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-relative">
+        <img class="image" src="clothing.webp" alt="">
+        <div class="deal-absolute">20% OFF</div>
+        <div class="button-position">
+            <button class="button-style">Add to Cart</button>
+        </div>
+    </div>
+   
+</body>
+</html>
