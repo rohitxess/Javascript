@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-2{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px ;
+            display: block;
+            margin-top: 15px;
+        }
+        .image-1, .image-3{
+            border-radius: 34px ;
+            display: block;
+            margin-top: 15px;
+            height: 50px;
+            width: 50px;
+        }
+        .sidebar1{
+            position: fixed;
+            background-color: rgb(37, 31, 31);
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 80px;
+            padding: 12px;
+        }
+        .sidebar2{
+            position: fixed;
+            background-color:rgb(57, 52, 52);
+            top: 0px;
+            bottom: 0px;
+            left: 80px;
+            right:1300px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        .flexbox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .info-box, .videos-box, .updates, .faq{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .info-box{
+            color: rgb(228, 224, 224);
+            font: 14px;
+        }
+
+        .videos-box, .updates, .faq, .plus-button{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar1">
+        <img class="image-1" src="channel-2.jpeg" alt="">
+        <img class="image-2" src="dog.jpg" alt="">
+        <img class="image-3" src="channel-5.jpeg" alt="">
+    </div>
+    <div class="sidebar2">
+        <div class="flexbox">
+            <p class="info-box">INFO</p>
+            <img class="plus-button" src="add.svg" alt="">
+        </div>
+        <p class="videos-box"># new-videos</p>
+        <p class="updates"># updates</p>
+        <p class="faq"># faq</p>
+    </div>
+
+</body>
+</html>
