@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexLayout</title>
+    <style>
+        .flex-home{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            width: 100px;
+            font-size: 18px;
+            margin-left: 10px ;
+        }
+        .right{
+            height: 40px;
+            width: 52px;
+            background-color:rgb(20, 117, 209);
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        
+        }
+        .right:hover{
+            opacity: 0.8;
+        }
+        .main{
+            border-color: lightgray;
+            border:solid;
+            border-width: 1px;
+            border-radius: 8px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="flex-home">
+            <p class="left">Home</p>
+            <a href="https://www.facebook.com/" target="_blank"><button class="right">14</button></a>
+         </div>
+         <div class="flex-home">
+            <p class="left">Notifications</p>
+            <button class="right">3</button>
+         </div>
+         <div class="flex-home">
+            <p class="left">Messages</p>
+            <button class="right">5</button>
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .border-flex{
+           background-color: none;
+           border: solid;
+           border-width: 1px;
+           height: 50px;
+           width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="=main-flex" style="display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; width: 200px;">200px</div>
+        <div style="background-color: lightpink; width: 75px;">75px</div>
+    </div> <br><br>
+    <div style="display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; width: 50px;">item1</div>
+        <div style="background-color: lightpink; flex: 1;">item2</div>
+        <div style="background-color: lightblue; width: 75px;">item3</div>
+    </div> <br> <br>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div style="background-color: lightblue;">item1</div>
+        <div style="background-color: lightpink; ">item2</div>
+        <div style="background-color: lightblue; ">item3</div>
+        <div style="background-color: lightblue; ">item3</div>
+    </div><br><br><br>
+    <div class="border-flex">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <div style="background-color: lightblue; margin-top: 15px;">item1</div>
+            <div style="background-color: lightpink; margin-top: 15px;">item2</div>
+        </div>
+    </div>
+</body>
+</html>

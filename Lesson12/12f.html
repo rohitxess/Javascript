@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12f</title>
+    <style>
+        .main-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(108, 57, 203);
+            height: 50px;
+            align-items: center;
+        }
+        .button1{
+            background-color: rgb(108, 57, 203); 
+            font-size: 12px;
+            color:white;
+            border: none;
+            margin-left: 10px; 
+            width: 60px;
+        }
+        .flex-search{
+            flex: 1;
+            margin-left: 30px;
+            margin-right: 30px;
+            max-width: 500px;
+        }
+        .flex-download{
+            width: 100px;
+            margin-right: 0px;
+        }
+        .Search{
+            width: 470px;
+            height: 23px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:  rgb(108, 57, 203); 
+            font-size: 10px;
+            padding-left: 15px;
+            border: none;
+            border-radius: 14px;
+        
+        }
+        .download-button{
+            width: 90px;
+            border: solid;
+            border-width: 1px;
+            border-radius: 2px;
+            background-color:rgb(108, 57, 203); 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: white;
+            padding: 6px;
+        }
+        .download-button:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .download-button:active{
+            opacity: 0.7;
+        }
+        .button1:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .button1:active{
+            opacity: 0.8;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="flex-home">
+            <button class="button1">Home</button>
+         </div>
+         <div class="flex-search">
+            <input class="Search" type="text" placeholder="Search">
+         </div>
+         <div class="flex-download">
+             <a href="https://www.youtube.com/"><button class="download-button">Download</button></a>
+         </div>
+    </div>
+</body>
+</html>
